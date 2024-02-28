@@ -5,3 +5,4 @@ The goal of this project is to build citation metrics for an astronomer (or a gr
 
 In this project we use the adsabs APIs designed to load the data that required to build SQL tables and subsequent queries. We follow the instructions from [Dmitry Savransky's notes](https://gist.github.com/dsavransky). 
 
+In the notebook ```biblio_JBB.ipynb```
