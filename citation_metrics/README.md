@@ -13,8 +13,8 @@ Since in python the json file can be treated as a dictionary we updated, and tra
 * `id`: primary key
 * `id_researcher`: researcher id from the institute table (secondary key)
 * `bibcode`: adsabs identifier for the publication (string)
-* `title': publication title (string)
+* `title`: publication title (string)
 * `author`: list of all coauthors of the article (string array)
 * `first_author`: last and first name of first author (string)
 * `first_aff`: affiliation of the first author of the article (string)
-* 'citation_count': accumuative number of citations (int) 
+* `citation_count`: accumuative number of citations (int) 
