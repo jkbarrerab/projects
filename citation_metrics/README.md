@@ -20,4 +20,4 @@ Since in python the json file can be treated as a dictionary we updated, and tra
 * `citation_count`: accumuative number of citations (int) 
 
 > **Note**
-> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+> In order to copy this csv file to a SQL table we had to manually change the `[]` symbols to `{}` in the `author` field. In very seldom cases, we also manually change the quotation symbol in this field from `"` to `'`. 
