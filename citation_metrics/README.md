@@ -24,5 +24,5 @@ Since in python the json file can be treated as a dictionary we updated, and tra
 
 After correcting the previous file, we copy the file `biblio_JBB_rev.csv` to the table `bibliograpahy_JBB` located in local posgtgresql database (`inst_research`):
 ```
-\copy metrics_JBB FROM '/Users/jorgebarrera_air/Dropbox/Public/SQL/research_IA/test_metrics_sel.csv' DELIMITER';' HEADER QUOTE'"' CSV
+\copy bibliography_JBB FROM '/local/path/test_metrics_sel.csv' DELIMITER';' HEADER QUOTE'"' CSV
 ```
