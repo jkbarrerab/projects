@@ -20,4 +20,4 @@ Since in python the json file can be treated as a dictionary we updated, and tra
 * `citation_count`: accumuative number of citations (int) 
 
 > **Note:**
->  In order to copy this csv file to a SQL table we had to manually change the `[]` symbols to `{}` in the `author` field. In very seldom cases, we also manually change the quotation symbol in this field from `"` to `'`. 
+>  In order to copy this csv file to a SQL table we had to manually change the `[]` symbols to `{}` in the `author` field. In very seldom cases, we also manually change the quotation symbol in this field from `""` to `'`. 
