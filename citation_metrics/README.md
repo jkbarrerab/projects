@@ -43,7 +43,7 @@ Using the same notebook (```biblio_JBB.ipynb```) we call the API to request for 
 * `reads`: number of reads per year (int array). This array does not have the same dimentions as the other two.
 
 > **Note:**
->  Similar to the othe csv file we change  the `[]` symbols to `{}` in the fields with arrays.
+>  Similar to the othe csv file we change  the `[]` symbols to `{}` in the fields with arrays. In the years field we also have to manually change the values from string to int by removing the quuotation marks `'` within the arrays.
 
 After correcting the file, we copy the csv file to the database 
 
