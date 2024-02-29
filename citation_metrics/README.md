@@ -132,4 +132,9 @@ This is the resulting table for this query:
 
 ![screenshot](hindex_table.png)
 
+This follows the trend observed in the metrics provided by adasabs. We note that in particular for the last two years there is a difference of 2 in the h-index. This could be due to constant updates of citations of different articles. 
+
+## Data for a group
+
+ **TBD: It is relatively easy to do an API query to include more researcher. As mentioned above, once to be careful to use the appropiate string for the name of the author**
 
