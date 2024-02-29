@@ -81,6 +81,7 @@ FROM (
 	) AS tbl
 
 ```
+This is the resulting table for this query:
 
-![screenshot](/Users/jorgebarrera_air/Desktop/cites_table.png)
+![screenshot](cites_table.png)
 
