@@ -49,4 +49,38 @@ After correcting the file, we copy the csv file to the database
 
 ### SQL queries
 
+Once we have copy the csv files to the tables in the postgresql database, we can use queries to create tables with the wanted metrics. The first table we want is the citation counts. We create a table using the following query:
+
+``` sql 
+CREATE TABLE cites(
+	id SERIAL PRIMARY KEY,
+	id_researcher INT, 	
+	year INT, 
+	sum_cites INT,
+	cont_cites INT	
+	);	
+```
+
+To populate the table we insert the query for each year:
+
+```sql
+INSERT INTO cites(id_researcher, year, sum_cites, cont_cites)
+SELECT
+	 6,tbl.u_years, tbl.sum_cites,sum(tbl.sum_cites) OVER (PARTITION BY aux ORDER BY tbl.u_years) AS cum_cites 
+FROM (
+	SELECT u_years, SUM(u_cites) AS sum_cites, 1 AS aux
+	FROM (
+		SELECT 
+			id, 
+			UNNEST(years) as u_years, 
+			UNNEST(cites) as u_cites
+		FROM metrics_jbb
+		)
+	GROUP BY u_years
+	ORDER BY u_years ASC
+	) AS tbl
+
+```
+
+![screenshot](/Users/jorgebarrera_air/Desktop/cites_table.png)
 
