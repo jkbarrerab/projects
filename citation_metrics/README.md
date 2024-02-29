@@ -85,3 +85,47 @@ This is the resulting table for this query:
 
 ![screenshot](cites_table.png)
 
+
+The other table we want to create is the accumulative h-index per year. As before, we create the table into the database:
+
+```sql
+CREATE TABLE h_index(
+	id SERIAL PRIMARY KEY,
+	id_researcher INT, 	
+	year INT, 
+	h_index INT	
+	);
+
+```
+
+We populate the table with the following query:
+```sql 
+INSERT INTO h_index(id, id_researcher, year, h_index)
+SELECT
+	12, 6, 2024, MAX(ranking)
+FROM(
+  SELECT
+    tbl.id, tbl.citation_count,
+    RANK () OVER ( 
+      ORDER BY tbl.citation_count DESC
+    	) ranking
+	FROM(
+    SELECT
+      id, count(u_years), SUM(u_cites) as citation_count
+    FROM(
+      SELECT
+        id,
+        bibcode,
+        UNNEST(years) as u_years,
+        UNNEST(cites) as u_cites
+      FROM metrics_jbb
+      ORDER BY u_years
+			)	
+		WHERE u_years <= 2024
+		GROUP BY id
+	) as tbl
+) as tmp
+WHERE tmp.ranking <= tmp.citation_count
+
+```
+
