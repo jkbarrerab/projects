@@ -128,4 +128,8 @@ FROM(
 WHERE tmp.ranking <= tmp.citation_count
 
 ```
+This is the resulting table for this query:
+
+![screenshot](hindex_table.png)
+
 
