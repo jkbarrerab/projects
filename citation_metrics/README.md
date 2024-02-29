@@ -31,4 +31,4 @@ After correcting the previous file, we copy the file `biblio_JBB_rev.csv` to the
 
 ### Metrics
 
-Once we have the bibcode of the researcher, we can send an API request to get the metrics for each of the bibcode ([https://github.com/adsabs/adsabs-dev-api/blob/master/API_documentation_Python/Metrics_API_Python.ipynb](see documentation here)). The 
+Once we have the bibcode of the researcher, we can send an API request to get the metrics for each of the bibcode ([see documentation here](https://github.com/adsabs/adsabs-dev-api/blob/master/API_documentation_Python/Metrics_API_Python.ipynb)). The 
