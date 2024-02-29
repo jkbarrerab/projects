@@ -45,3 +45,8 @@ Using the same notebook (```biblio_JBB.ipynb```) we call the API to request for 
 > **Note:**
 >  Similar to the othe csv file we change  the `[]` symbols to `{}` in the fields with arrays.
 
+After correcting the file, we copy the csv file to the database 
+
+### SQL queries
+
+
