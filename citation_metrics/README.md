@@ -2,7 +2,7 @@
 
 ## Data for a single researcher
 
-### Bibliographic Basics
+### Bibliography Basics
 
 The goal of this project is to build citation metrics for an astronomer (or a group of astronomers) using data from the [adsabs](https://ui.adsabs.harvard.edu/) website in SQL format. 
 
@@ -10,7 +10,7 @@ In this project we use the adsabs APIs designed to load the data that required t
 
 In the notebook ```biblio_JBB.ipynb``` we use the adsabs API to request for the bibliographic information from all the articles where `'Jorge Barrera-Ballesteros'` is the (co-)author. The `request.get` function returns, among others, a json file where the metadata of the articles is retrived. For this query we obatin the information of 122 articles. We note that the number of entries (i.e., articles) vary depending on the string used for the name. For example using the string `'Jorge Barrera'` yields a total of 1602 entries. Of course, many of those do not correspond to the author we intent to search for. Since most of the researchers sign articles only with their first and last names, looking for researchers that sign with their full name is challenging. This is usually the case for spanish speaker researchers.
 
-Since in python the json file can be treated as a dictionary we updated, and transform it to a csv file, accordingly (this is the `biblio.JBB.csv` file). This are the columns of the file:
+Since in python the json file can be treated as a dictionary we updated, and transform it to a csv file, accordingly (this is the `biblio.JBB.csv` file). These are the columns of the file:
 
 * `id`: primary key
 * `id_researcher`: researcher id from the institute table (secondary key)
@@ -30,3 +30,18 @@ After correcting the previous file, we copy the file `biblio_JBB_rev.csv` to the
 ```
 
 ### Metrics
+
+Once we have the bibcode of the researcher, we can send an API request to get the metrics for each of the bibcode ([see documentation here](https://github.com/adsabs/adsabs-dev-api/blob/master/API_documentation_Python/Metrics_API_Python.ipynb)). There is a wealth of meta information for each publication, however we focus in three fields: `bibcode`,`years`,`citations`, `reads`. Our goal is to derive from these fields the metrics such as h-index, citations per year and accumulative cites. 
+
+Using the same notebook (```biblio_JBB.ipynb```) we call the API to request for the aforementioned fields. Similar to the bibliographic information, we translate the json dictionary to a dataframe to export to a csv file (`metrics_JBB.csv`). These are the columns of this file:
+
+* `id`: primary key
+* `id_researcher`: researcher id from the institute table (secondary key)
+* `bibcode`: adsabs identifier for the publication (string)
+* `years`: years since publication of the article (int array)
+* `citations`: citations per year (int array)
+* `reads`: number of reads per year (int array). This array does not have the same dimentions as the other two.
+
+> **Note:**
+>  Similar to the othe csv file we change  the `[]` symbols to `{}` in the fields with arrays.
+
