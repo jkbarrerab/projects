@@ -2,7 +2,7 @@
 
 ## Data for a single researcher
 
-### Bibliographic Basics
+### Bibliography Basics
 
 The goal of this project is to build citation metrics for an astronomer (or a group of astronomers) using data from the [adsabs](https://ui.adsabs.harvard.edu/) website in SQL format. 
 
@@ -30,3 +30,5 @@ After correcting the previous file, we copy the file `biblio_JBB_rev.csv` to the
 ```
 
 ### Metrics
+
+Once we have the bibcode of the researcher, we can send an API request to get the metrics for each of the bibcode ([https://github.com/adsabs/adsabs-dev-api/blob/master/API_documentation_Python/Metrics_API_Python.ipynb](see documentation here)). The 
