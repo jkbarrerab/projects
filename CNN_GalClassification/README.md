@@ -6,4 +6,4 @@ This project make use of the images reprocessed by the  [`astroNN`](wwww) packag
 
 In the notebook `CNN_galaxies.ipynb` we show the CNN architecture as well as the metrics used to estimate the acquracy of the model. Given the simplycity of the model and the training sample, this notebook can be run in colab. 
 
-This code was developed as part of the optative lecture 'Data analysis for astronomy' held at the UNAM Astronomy Institute during the fall 2023 term. Teachers: Joel Sanchez and Jorge Barrera. Students: Eric Macías Estrada, Mónica Alejandra Villa Durango, Valeria Quintero Ortega, and Aurora Mata Sánchez. 
+This code was developed as the final project of the optative lecture 'Data analysis for astronomy' held at the UNAM Astronomy Institute during the 2023-fall term. Teachers: Joel Sanchez and Jorge Barrera. Students: Eric Macías Estrada, Mónica Alejandra Villa Durango, Valeria Quintero Ortega, and Aurora Mata Sánchez. 
