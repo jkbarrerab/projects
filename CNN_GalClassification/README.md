@@ -8,7 +8,7 @@ In the notebook `CNN_galaxies.ipynb` we show the CNN architecture as well as the
 
 This code was developed as the final project of the optative lecture 'Data analysis for astronomy' held at the UNAM Astronomy Institute during the 2023-fall term. Teachers: Joel Sanchez and Jorge Barrera. Students: Eric Macías Estrada, Mónica Alejandra Villa Durango, Valeria Quintero Ortega, and Aurora Mata Sánchez. 
 
-#Results
+# Results
 
 ![screenshot](CNN_loss_accuracy.png)
 
