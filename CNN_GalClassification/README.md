@@ -34,7 +34,7 @@ Another metrics we use is the accuracy. This is derived as the sum of the true p
 
 ## Confusion Matrix
 
-The confusion matrix helps us to better cuantify how the Neural Network is performing the classification. The columns represent the true tags of the sample, whereas the rows represent the predicted tag from the CNN. In our case, the numbers corresponds to the classification presented in the figure above. If the network did a perfect job all the values in the diagonal of the matrix will be 100% and the rest should be 0%. As we can see this is not the case, we find values in the diagonal close to 90% but this is not the case for all the tags. This suggest the subtle differences in morphological classifation of galaxies. For instance the 
+The confusion matrix helps us to better cuantify how the Neural Network is performing the classification. The columns represent the true tags of the sample, whereas the rows represent the predicted tag from the CNN. In our case, the numbers corresponds to the classification presented in the figure above. If the network did a perfect job all the values in the diagonal of the matrix will be 100% and the rest should be 0%. As we can see this is not the case, we find values in the diagonal close to 90% but this is not the case for all the tags. This suggest the subtle differences in morphological classifation of galaxies. For instance the tag 10 (Disk, Face-ON, Loose Spiral) is, morphologicaly speaking, similar to the tag 1 (Disk, Face-On, No spiral). This is observed in the confusion matrix, where the cell (1,10) has a value close to 30%.
 
 ![screenshot](CNN_confusionMatrix.png)
 
