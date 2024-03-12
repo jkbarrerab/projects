@@ -34,5 +34,7 @@ Another metrics we use is the accuracy. This is derived as the sum of the true p
 
 ## Confusion Matrix
 
+The confusion matrix helps us to better cuantify how the Neural Network is performing the classification. The columns represent the true tags of the sample, whereas the rows represent the predicted tag from the CNN. If the network did 
+
 ![screenshot](CNN_confusionMatrix.png)
 
