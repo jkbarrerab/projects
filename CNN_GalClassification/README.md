@@ -23,7 +23,7 @@ Given the simplycity of the model and the training sample, this notebook can be 
 
 # Results
 
-In the below plots we show the Loss function (left panel) and accuracy (right panel) with respect to the epochs we train the CNN. The Loss function is used to quantify how good or bad we are doing the classification of our training set. In this case we use the cross entropy function. This function is usually used for classification tasks.  We train our CNN for 200 epochs.
+In the below plots we show the Loss function (left panel) and accuracy (right panel) with respect to the epochs we train the CNN. The Loss function is used to quantify how good or bad we are doing the classification of our training set. In this case we use the cross entropy function. This function is usually used for classification tasks.  We train our CNN for 200 epochs. We note that as the epoch of training increases the Loss function dramatically decreases which is expected. However we also note that at the epoch 75 the Loss function using the validation set start to slightly increases. This suggest that, eventough the loss function is monotonicaly decreasing when we use the training set, there could be an overfitting in the training after this epoch.   
 
 ![screenshot](CNN_loss_accuracy.png)
 
