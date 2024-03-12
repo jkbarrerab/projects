@@ -23,6 +23,8 @@ Given the simplycity of the model and the training sample, this notebook can be 
 
 # Results
 
+In the below plots we show the Loss function (left panel) and accuracy (right panel) with respect to the epochs we train the CNN. The Loss function is used to quantify how good or bad we are doing the classification of our training set. In this case we use the cross entropy function. This function is usually used for classification tasks. 
+
 ![screenshot](CNN_loss_accuracy.png)
 
 ![screenshot](CNN_confusionMatrix.png)
