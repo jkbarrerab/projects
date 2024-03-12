@@ -136,6 +136,8 @@ This is the resulting table for this query:
 
 ![screenshot](hindex_table.png)
 
+
+Below we plot this table. We note that since the h-index is an accumulative value is always increasing, however we find that speed of this index is relatively high. It took to the researcher 10 years to reach an h-index of 40 (this is usually achive in 20 years lapse). Following that trend, in less than 10 years the researcher could achive an h-index of 80 which is often considered exceptional. 
 ![screenshot](hindex.png)
 
 
