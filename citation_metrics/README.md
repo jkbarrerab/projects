@@ -85,8 +85,7 @@ This is the resulting table for this query:
 
 ![screenshot](cites_table.png)
 
-We plot these citations below
-
+We plot these citations below. We show how they increase monotonicaly, this is that for every year the citation was higher than the year before. 
 
 ![screenshot](cumulative_cites.png) 
 ![screenshot](sum_cites.png)
