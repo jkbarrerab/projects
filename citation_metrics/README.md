@@ -85,7 +85,9 @@ This is the resulting table for this query:
 
 ![screenshot](cites_table.png)
 
-We plot these citations
+We plot these citations below
+
+
 ![screenshot](cumulative_cites.png) 
 ![screenshot](sum_cites.png)
 
