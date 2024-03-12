@@ -8,9 +8,18 @@ This project make use of the images reprocessed by the  [`astroNN`](https://astr
 
 In the notebook `CNN_galaxies.ipynb` we employ a CNN architecture as well as the metrics used to estimate the acquracy of the model. The Neural Network architecture consist of: 
 * 2 convolutional leyer with 64 filters of 3x3 kernel size
-* 1 maxpooling layer of 2x2 kernel size; Given the simplycity of the model and the training sample, this notebook can be run in colab. 
+* 1 maxpooling layer of 2x2 kernel size
+* 1 convolutional leyer with 128 filters of 3x3 kernel size
+* 1 maxpooling layer of 2x2 kernel size
+* 1 convolutional leyer with 256 filters of 3x3 kernel size
+* 1 maxpooling layer of 2x2 kernel size
+* 1 Dropout of 0.5
+* 2 dense layer of 150 and 60 neurons, respectively.
+* 1 final dense leyer of 10
 
-This code was developed as the final project of the optative lecture 'Data analysis for astronomy' held at the UNAM Astronomy Institute during the 2023-fall term. Teachers: Joel Sanchez and Jorge Barrera. Students: Eric Macías Estrada, Mónica Alejandra Villa Durango, Valeria Quintero Ortega, and Aurora Mata Sánchez. 
+For the convolutional layers we use a relu activation function whereas for the dense layers we use a tanh activation function (except for the ouput layer where we use a softmax function).
+
+Given the simplycity of the model and the training sample, this notebook can be run in colab. . This code was developed as the final project of the optative lecture 'Data analysis for astronomy' held at the UNAM Astronomy Institute during the 2023-fall term. Teachers: Joel Sanchez and Jorge Barrera. Students: Eric Macías Estrada, Mónica Alejandra Villa Durango, Valeria Quintero Ortega, and Aurora Mata Sánchez. 
 
 # Results
 
