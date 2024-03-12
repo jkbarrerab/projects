@@ -85,6 +85,9 @@ This is the resulting table for this query:
 
 ![screenshot](cites_table.png)
 
+We plot these citations
+![screenshot](cumulative_cites.png) 
+![screenshot](sum_cites.png)
 
 The other table we want to create is the accumulative h-index per year. As before, we create the table into the database:
 
