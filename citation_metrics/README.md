@@ -136,6 +136,9 @@ This is the resulting table for this query:
 
 ![screenshot](hindex_table.png)
 
+![screenshot](hindex.png)
+
+
 This follows the trend observed in the metrics provided by adasabs. We note that in particular for the last two years there is a difference of 2 in the h-index. This could be due to constant updates of citations of different articles. 
 
 ## Data for a group
