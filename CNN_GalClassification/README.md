@@ -4,7 +4,7 @@ In this project we use CNN to provide morphological classification of galaxies i
 
 This project make use of the images reprocessed by the  [`astroNN`](https://astronn.readthedocs.io/en/latest/galaxy10sdss.html) package (see [Gharat & Dandawate, 2022](https://ui.adsabs.harvard.edu/abs/2022MNRAS.511.5120G/abstract), and [Leung and Bovy, 2019](https://ui.adsabs.harvard.edu/abs/2019MNRAS.483.3255L/abstract) for further information regarding tagging, and image downscaling). Here is an example of the images as well as the classification provided by the [`astroNN`](https://astronn.readthedocs.io/en/latest/galaxy10sdss.html) package:
 
-![screenshot](ClassificationExamplepng)
+![screenshot](ClassificationExample.png)
 
 In the notebook `CNN_galaxies.ipynb` we show the CNN architecture as well as the metrics used to estimate the acquracy of the model. Given the simplycity of the model and the training sample, this notebook can be run in colab. 
 
