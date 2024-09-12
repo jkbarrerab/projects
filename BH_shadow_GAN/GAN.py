@@ -70,4 +70,6 @@ def train_gan(epochs, batch_size):
 
 train_gan(epochs=10000, batch_size=64)
 
+# need to be tested!
+
 
